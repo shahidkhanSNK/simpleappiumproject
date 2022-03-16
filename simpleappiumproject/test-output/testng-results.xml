@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-01T08:18:31 EST" name="Default suite" finished-at="2022-03-01T08:19:27 EST" duration-ms="55929">
+    <groups>
+    </groups>
+    <test started-at="2022-03-01T08:18:31 EST" name="Default test" finished-at="2022-03-01T08:19:27 EST" duration-ms="55929">
+      <class name="Test.simpleAppiumTest">
+        <test-method is-config="true" signature="setuptest()[pri:0, instance:Test.simpleAppiumTest@50b5ac82]" started-at="2022-03-01T08:18:31 EST" name="setuptest" finished-at="2022-03-01T08:18:51 EST" duration-ms="20001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setuptest -->
+        <test-method signature="closepopups()[pri:0, instance:Test.simpleAppiumTest@50b5ac82]" started-at="2022-03-01T08:18:51 EST" name="closepopups" finished-at="2022-03-01T08:19:01 EST" duration-ms="10117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closepopups -->
+        <test-method signature="performactionsonapp()[pri:1, instance:Test.simpleAppiumTest@50b5ac82]" started-at="2022-03-01T08:19:01 EST" name="performactionsonapp" finished-at="2022-03-01T08:19:26 EST" duration-ms="25621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performactionsonapp -->
+        <test-method is-config="true" signature="teardowntest()[pri:0, instance:Test.simpleAppiumTest@50b5ac82]" started-at="2022-03-01T08:19:26 EST" name="teardowntest" finished-at="2022-03-01T08:19:26 EST" duration-ms="76" status="FAIL">
+          <exception class="org.openqa.selenium.UnsupportedCommandException">
+            <message>
+              <![CDATA[The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CINE6FF', ip: '192.168.154.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .HomeScreenActivity, appPackage: io.selendroid.testapp, browserName: , databaseEnabled: false, desired: {appActivity: .HomeScreenActivity, appPackage: io.selendroid.testapp, browserName: , deviceName: My New Phone, platformName: android, platformVersion: 10.0, udid: 192.168.154.101:5555}, deviceApiLevel: 29, deviceManufacturer: Genymobile, deviceModel: Samsung Galaxy S10, deviceName: 192.168.154.101:5555, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: 192.168.154.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, udid: 192.168.154.101:5555, viewportRect: {height: 2788, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: ed643bfb-1fbc-47de-b315-5369761e32ce]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CINE6FF', ip: '192.168.154.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .HomeScreenActivity, appPackage: io.selendroid.testapp, browserName: , databaseEnabled: false, desired: {appActivity: .HomeScreenActivity, appPackage: io.selendroid.testapp, browserName: , deviceName: My New Phone, platformName: android, platformVersion: 10.0, udid: 192.168.154.101:5555}, deviceApiLevel: 29, deviceManufacturer: Genymobile, deviceModel: Samsung Galaxy S10, deviceName: 192.168.154.101:5555, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: 192.168.154.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, udid: 192.168.154.101:5555, viewportRect: {height: 2788, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: ed643bfb-1fbc-47de-b315-5369761e32ce
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at Test.simpleAppiumTest.teardowntest(simpleAppiumTest.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardowntest -->
+      </class> <!-- Test.simpleAppiumTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
